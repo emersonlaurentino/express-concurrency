@@ -1,10 +1,8 @@
-const axios = require('axios');
-
 async function getRandomUser(req, res) {
   try {
-    const { data, config } = await req.atomService.getUser();
+    const { data } = await req.atomService.getUser();
 
-    res.json(config.headers);
+    res.json(data);
   } catch (error) {
     throw error;
   }
