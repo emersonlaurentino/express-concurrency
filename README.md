@@ -1,6 +1,6 @@
 # Problema de Concorrência usando nodejs
 
-Quando o endpoint `/users` é acessado o controller faz duas requisições:
+Quando o endpoint `/user` é acessado o controller faz duas requisições:
 - busca as permissões do usuário;
 - busca os dados do usuário na API do backend;
 
